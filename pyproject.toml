@@ -1,0 +1,20 @@
+[project]
+name = "call_center"
+version = "0.1.0"
+description = "call-center using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.74.2,<1.0.0"
+]
+
+[project.scripts]
+call_center = "call_center.main:run"
+run_crew = "call_center.main:run"
+train = "call_center.main:train"
+replay = "call_center.main:replay"
+test = "call_center.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
